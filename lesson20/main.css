@@ -1,0 +1,29 @@
+header {
+    height: 60px;
+    background: orange;
+}
+
+header a {
+    color: black;
+}
+
+.blockquote {
+    margin: 20px 0;
+    background: rgba(255, 165, 0, 0.5);
+}
+
+.links {
+    background: rgb(183, 107, 250);
+    color: white;
+    height: 300px;  
+}
+
+.links li {
+    text-decoration: underline;
+}
+
+.block1 img {
+    width: 200px;
+    display: block;
+    margin-bottom: 20px;
+}
