@@ -1,0 +1,30 @@
+
+
+.top {
+ background: #da7d7d;   
+ color: white;
+}
+
+.top span {
+    color: yellow;
+}
+
+.top div {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.bottom {
+    background: green;
+    width: 300px;
+}
+
+.bottom span {
+    background: purple;
+    color: white;
+}
+
+.none {
+    background: none;
+}
