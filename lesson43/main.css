@@ -1,0 +1,244 @@
+* {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    background: #181E34;
+}
+
+.conteiner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px auto;
+}
+
+/* ```````````````````````````````` */
+
+.header {
+    height: 114px;
+    padding: 30px 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+.header__right-ul {
+    display: flex;
+}
+.header__right-li {
+    font-weight: 400;
+    line-height: 150%;
+    margin-right: 30px;
+}
+
+.header__right-li:last-child {
+    margin-right: 0;
+}
+
+.button {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #2766AE;
+    height: 48px;
+    padding: 0 30px;
+    border-radius: 100px;
+    background: #FFF;
+}
+
+.header .button {
+    margin-left: 34px;
+}
+
+/* ````````````````````` */
+
+
+.install {
+    padding: 120px 0;
+    background: 0 0 / cover url('images/Rectangle\ 1.svg') no-repeat;
+}
+
+.install .conteiner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.install-title {
+    
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.install__group {
+    margin-top: 60px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.space--down {
+    padding-bottom: 15px;
+}
+
+.install__group-title {
+    max-width: 436px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.blue {
+    color: #01A2CB;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+.install__gorup-buttons {
+    width: 100%;
+    max-width: 320px;
+}
+.install .button , .them .button {
+    display: flex;
+    justify-content: center;
+    height: 56px;
+    color: white;
+    background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+}
+
+.install .button img {
+    margin-left: 4px;
+}
+
+.button--img {
+background: linear-gradient(95deg, #00A4CC 6.7%, #2766AE 91.35%);
+    margin-top: 18px;
+}
+
+/* ```````````````````````````````````````` */
+
+.them {
+    margin: 120px 0;
+}
+
+.them .conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.them__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.them__title-text {
+    margin-top: 15px;
+    max-width: 513px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+.them__links {
+    margin-bottom: 30px;
+}
+.them__links-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+.them__links-li {
+    border-radius: 16px;
+    border: 2px solid #176BAE;
+    background: #197CB8;
+    padding: 28px;
+    display: flex;
+    max-width: 204px;
+    flex-direction: column;
+    box-shadow: 4px 4px 13px 0px rgba(5, 13, 41, 0.76);
+}
+.them__links-li-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.them__links-li-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 144px;
+    text-align: center;
+}
+
+.them .button {
+    width: 100%;
+    max-width: 436px;
+}
+
+/* ````````````````````````````````````` */
+
+.footer {
+    border-top: 1px solid #323952;
+    background: #181E34;
+    padding: 60px 0;
+}
+.footer .conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__left {
+}
+.footer__left-logo {
+    margin-bottom: 15px;
+}
+.footer .them__title-text {
+    max-width: 267px;
+    text-align: left;
+}
+.footer__right {
+    display: flex;
+    
+}
+.footer__right-ul {
+    color: var(--, #FFF);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-right: 117px;
+}
+
+.footer__right-ul:last-child {
+    margin-right: 0;
+}
+
+.footer__right-ul div {
+    margin-bottom: 20px;
+}
+
+.footer__right-li {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: none;
+    margin-bottom: 10px;
+}
