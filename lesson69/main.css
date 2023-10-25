@@ -145,14 +145,21 @@ body {
 
 .shop__iner {
     display: flex;
+    align-items: start;
     justify-content: space-between;
 }
 .shop__left {
+    
     height: 1170px;
     padding: 30px 108px 840px 30px;
     border: 2px solid#D0DCE7;
     background: #F8FCFF;
 }
+.shop--sticky {
+    position: sticky;
+    top: 5vh;
+}
+
 .shop__left-ul {
 
 }
