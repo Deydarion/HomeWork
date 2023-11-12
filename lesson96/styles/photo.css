@@ -1,0 +1,99 @@
+.photo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 140px;
+    overflow: hidden;
+}
+.photo__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+.photo__text img {
+    margin-left: 3.96vw;
+}
+.photo__text-group {
+    max-width: 380px;
+    padding-left: 15px;
+    
+}
+.photo__text-img {
+    display: flex;
+    
+}
+.photo__text-group div {
+    
+    margin-bottom: 20px;
+}
+
+.photo__text-paggination {
+    display: flex;
+    gap: 1.56vw;
+    align-items: center;
+
+}
+.photo__p-next, .tether__next, .tether__prev ,.photo__p-prev path,.tether__next, .tether__prev , .photo__p-prev , .photo__p-next {
+    border-radius: 50%;
+    transition: all .3s;
+}
+.photo__p-next path, .tether__next path, .tether__prev path ,.photo__p-prev path,.tether__next rect, .tether__prev rect, .photo__p-prev rect , .photo__p-next rect{
+    transition: all .3s;
+    stroke-width: 1.5px;
+}
+.swiper-button-disabled:hover {
+    background: none;
+}
+.photo__p-prev:hover  , .tether__next:hover , .tether__prev:hover  ,.photo__p-next:hover {
+    background: #FFA55C;
+}
+.photo__p-prev:hover path , .tether__next:hover path, .tether__prev:hover path , .photo__p-next:hover path {
+    fill: #FFF9F4;
+}
+.photo__p-prev:hover rect , .tether__next:hover rect, .tether__prev:hover rect ,.photo__p-next:hover rect {
+    stroke: #FFA55C;
+}
+.swiper-button-disabled:hover path{
+    fill: #E1D9E1
+}
+.swiper-button-disabled:hover {
+    background: none;
+}
+.swiper-button-disabled:hover rect {
+    stroke: #E1D9E1;
+}
+.photo__p-bar, .photo__p-bar span {
+    color: #312C27;
+    font-family: 'Gabriola';
+    font-size: 42px;
+    line-height: 90%;
+    text-align: center;
+}
+.photo__p-next, .photo__p-prev {
+    display: flex;
+    align-self: center;
+}
+.swiper-button-disabled path {
+    fill: #E1D9E1;
+}
+.swiper-button-disabled rect {
+    stroke: #E1D9E1;
+}
+
+.photo__p-bar {
+    min-width: 59px;
+}
+.photo__slider {
+    user-select: none;
+}
+.photo__slider img {
+    width: 100%;
+}
+
+.photo__swiper {
+    height: auto;
+}
+.swiper-wrapper {
+}
+.photo-slide {
+}

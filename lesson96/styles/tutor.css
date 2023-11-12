@@ -1,0 +1,143 @@
+
+.tutor {
+}
+.tutor__iner {
+    display: flex;
+    flex-direction: column;
+}
+.tutor__tab {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.tutor__tab-text {
+    display: flex;
+}
+.tutor__tab-title {
+    margin-bottom: 20px;
+}
+
+.tutor__tab-span {
+    max-width: 374px;
+}
+.tutor__tab-ul {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.tutor__tab-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 14px 30px; 
+    box-shadow: 0px 4px 20px 0px rgba(206, 195, 185, 0.30);
+    background: var(--white-color);
+    transition: all .3s;
+}
+.tutor__tab-link--active {
+    background: var(--accent-color);
+    box-shadow: none;
+}
+
+/* ````````````````` tutor block ``````````````````````````` */
+
+.tutor__block {
+    margin-bottom: 30px;
+}
+
+.tutor__block:last-child {
+    margin-bottom: 0;
+}
+
+.tutor__tab-li button {
+    background: transparent;
+}
+
+.tutor__block {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid var(--accent-color);
+    background: var(--white-color);
+    padding: 40px 30px;
+    font-size: 50px;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+}
+
+.tutor__block--active .tutor__block {
+    display: inline-flex;
+}
+
+.tutor__block-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+.tutor__block-text {
+    text-align: left;
+}
+.tutor__block-img {
+    transform: rotate(90deg);
+    height: 36px;
+    width: 36px;
+    min-width: 36px;
+    border-radius: 20px;
+    border: 2px solid var(--orange);
+    background: var(--white-color);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.tutor__block-img path {
+    fill: var(--orange);
+}
+
+.tutor__accoridon {
+    transition: all .3s;
+    max-height: 0;
+    overflow: hidden;
+}
+.tutor__accoridon-ul>span {
+    display: block;
+    color: #CEAAD0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.tutor__accoridon-h2 {
+    display: flex;
+    gap: 80px;
+}
+
+.tutor__accoridon-ul li  {
+    margin-bottom: 20px;
+}
+.tutor__accoridon-ul li:last-child {
+    margin-bottom: 0;
+}
+
+.tutor__block-button:hover .tutor__block-img {
+    transform: rotate(180deg);
+    background: var(--orange);
+
+}
+.tutor__block-button:hover path {
+    fill: var(--white-color)
+}
+
+.tutor__accordion--active .tutor__block-img {
+    transform: rotate(180deg);
+    background: var(--orange);
+}
+.tutor__accordion--active .tutor__block-img path {
+    fill: var(--white-color)
+}

@@ -1,0 +1,146 @@
+
+.pre__form {
+    background: url('../images/background/Group.png') 50% 0 / cover no-repeat ;
+    
+}
+.form {
+    position: relative;
+    padding: 140px 0;
+    display: flex;
+    gap: 84px;
+}
+.form img {
+    
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: -40px;
+}
+
+.form-text::before {
+    content: url('../images/Group.svg');
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -663px;
+    height: 122px;
+    width: 116px;
+}
+
+.form-text {
+    position: relative;
+    max-width: 420px;
+}
+.form-text .h1::after {
+    content: url('../images/person/ras__many.svg');
+    position: absolute;
+    right: -196px;
+    top: 38px;
+}
+.form-text .h1 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-text .p2 {
+    margin-bottom: 40px;
+}
+.name, .telephone {
+    background: transparent;
+    padding: 19px 28px;
+    border-radius: 100px;
+    border: 1px solid  #AC907A;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.name:hover, .telephone:hover {
+    border: 1px solid #FFA55C;
+    
+}
+
+.form-check {
+    display: flex;  
+    margin: 10px 0 20px;
+}
+.name-a {
+    position: relative;
+    display: block;
+}
+
+.name-a span {
+    position: absolute;
+    top: 12px;
+    left: 28px;
+    font-size: 12px;
+    color:#AC907A;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.name-a input::placeholder, .telephone::placeholder {
+    color: #AC907A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    transition: all .3s;
+    position: relative;
+}
+.name-a input::placeholder {
+    transition: all .3s;
+} 
+.name-a:hover input::placeholder, .telephone:hover::placeholder {
+    color: #FFA55C;
+}
+
+.name:focus {
+    padding: 26px 42px 12px 28px;
+}
+.name:focus+span {
+    opacity: 1;
+    visibility: visible;
+}
+.name input {
+    background: transparent;
+}
+
+
+input.checkbox {
+    cursor: pointer;
+    display: block;
+    min-width: 16px;
+    appearance: none;
+    border-radius: 19%;
+    width: 16px;
+    height: 16px;
+    border: solid 2px #AC907A;
+    margin-right: 5px;
+    transition: all .3s;
+    position: relative;
+}
+input.checkbox:hover {
+    border: solid 2px #FFA55C;
+}
+input.checkbox:checked {
+    border: solid 2px #FFA55C;
+    background: #FFA55C;
+}
+input.checkbox:checked::after {
+    position: absolute;
+    content: url('../images/curc/galochka__white.svg');
+    bottom: -6px;
+    left: -2px;
+}
+.form-law, .form--under a{
+    max-width: 267px;
+    color: #312C27;
+    font-size: 13px;
+    line-height: 150%;
+}
+.form--under a {
+    text-decoration: underline;
+}
+.form .button {
+    width: 100%;
+}
