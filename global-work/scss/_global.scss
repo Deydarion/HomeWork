@@ -1,0 +1,164 @@
+$white: #FAFAFA;
+$gray-h6: #4A5568;
+$brand-primary-bg: #57007B;
+$gradient-primary-bg: linear-gradient(225deg, #F76680 0%, #57007B 100%);
+$gray-gray-900: #1A202C;
+$gray-gray-700: #4A5568;
+
+* {
+    font-family: 'Inter';
+}
+
+
+@mixin graddient {
+    background: $gradient-primary-bg;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin default-lg {
+    color: $gray-gray-700;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; 
+}
+
+@mixin lite--h1 {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 71px;
+}
+
+@mixin bold--h1 {
+    
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 71px;
+}
+
+@mixin h3 {
+    color:$gray-gray-900;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 136.023%; /* 38.086px */
+}
+@mixin h5 {
+    color:$brand-primary-bg;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.09px;
+}
+
+
+@mixin h6 {
+    color: $gray-h6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; 
+}
+
+
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.button {
+    color: $white;
+    font-weight: 600;
+    line-height: 14px;
+    font-size: 14px;
+    padding: 14px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+    background: $gradient-primary-bg;
+}
+.burger {
+    width: 50px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    span {
+        position: relative;
+    }
+    span, span::after, span::before {
+        content: '';
+        transition: all .4s;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #1F1711;
+        border-radius: 100px;
+    }
+    span::after {
+        position: absolute;
+        top: 8px;
+    }
+    span::before {
+        position: absolute;
+        bottom: 9px;
+    }
+}
+
+
+.burger--down {
+    overflow: hidden;
+    .burger {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        border-radius: 50%;
+        box-shadow: 0 0 11px 1px #1F1711;
+        background: $white;
+    } 
+}
+
+.burger--opened {
+    overflow: hidden;
+
+    .burger span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    .burger span::after {
+        top: 0; 
+        transform: rotate(-45deg);
+    }
+
+    .burger span {  
+        background: transparent;
+    }
+    
+    
+}
+
+
+@media (max-width: 1000px) {
+    .burger {
+        z-index: 101;
+        position: fixed;
+        display: flex;
+        right: 20px;
+        top: 10px;
+    }
+}

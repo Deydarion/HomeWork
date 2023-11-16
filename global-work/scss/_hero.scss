@@ -1,0 +1,94 @@
+
+
+.hero {
+    padding: 69px 2.97vw 91.66px 5.42vw  ;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    .hero__big .lite--h1 {
+        @include lite--h1;
+        margin-bottom: 28px;
+        span .graddient {
+            @include graddient;
+        } 
+        .bold--h1 {
+            @include bold--h1;
+        }
+        .bold--h1+.graddient {
+            @include graddient;
+        }
+    }
+    .button {
+        max-width: 175px;
+        padding: 19px 30px; 
+        background: $brand-primary-bg;
+    }
+    .hero__big {
+        width: 531px; 
+        margin-bottom: 75px;
+        .default-lg {
+            @include default-lg;
+        }
+    }
+    .hero__iner {
+        display: flex;
+        .hero__text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 531px;
+            .hero__text.bold--h1 {
+                width: 531px;   
+            }
+        }
+    } 
+
+    
+
+}
+
+@media (max-width: 1279px) {
+    .hero {
+        padding-left: 3.59vw ;
+        & img {
+            width: 48.07vw;
+        }
+    }
+}
+
+@media (max-width: 1039px) {
+    .hero img {
+        display: none;
+    }
+}
+
+@media (max-width: 591px) {
+    .hero {
+        & .lite--h1 , & .default-lg {
+            text-wrap: wrap;
+        }
+        & .hero__big {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 391px) {
+    .hero {
+        padding-left: 9vw;
+        padding-right: 9vw;
+        & .lite--h1 , & .bold--h1 {
+            font-size: 35px;
+            line-height: 51px;
+            text-align: center;
+        } 
+        & .default-lg  {
+            text-align: center;
+        }
+        & .hero__text {
+            
+            align-items: center;
+        }
+    
+    }
+}
